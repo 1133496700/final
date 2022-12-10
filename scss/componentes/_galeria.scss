@@ -1,0 +1,391 @@
+@media only screen and (max-width: 899px){
+    
+    .body-galeria{
+        main{
+            height: 7500px;
+        }
+    }
+    
+    
+    .main-galeria{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 800px 800px 800px 800px 800px 800px 800px 800px 800px;
+        grid-template-areas:"area1"
+                            "area2"
+                            "area3"
+                            "area4"
+                            "area5"
+                            "area6"
+                            "area7"
+                            "area8"
+                            "area9";
+        align-content: space-between;
+    
+    
+        .section-galeria1{
+            grid-area: area1;
+    
+            .img1{
+                margin-top: 20px;
+                margin-left: 10px;
+                height: 45%;
+                width: 45%;
+            }
+            .img2{
+                margin-left: 20px;
+                height: 30%;
+                width: 45%;
+            }
+            .img3{
+                margin-top: 17px;
+                margin-left: 60px;
+                height: 45%;
+                width: 80%;
+            }
+        }
+    
+        .section-galeria2{
+            grid-area: area2;
+            text-align: center;
+            
+    
+            .img4{
+                
+                width: 40%;
+                height: 50%;
+            }
+            .img5{
+                margin-top: 18px;
+                width: 50%;
+                height: 60%;
+    
+            }
+            .img6{
+                object-fit: cover;
+                margin-top: 10px;
+                width: 80%;
+                height: 30%;
+            }
+    
+        }
+    
+        .section-galeria3{
+    
+            grid-area: area3;
+            text-align: center;
+    
+            .img7{
+                width:90%;
+                height: 40%;
+                object-fit: cover;
+            }
+            .img8{
+                margin-top: 15px;
+                margin-right: 10px;
+                width: 47%;
+                height: 50%;
+            }
+            .img9{
+                width: 40%;
+                height: 50%;
+            }
+    
+    
+        }
+        .section-galeria4{
+            grid-area: area4;
+            text-align: center;
+            .img10{
+                width: 95%;
+                height: 48%;
+            }
+            .img11{
+                width: 48%;
+                height: 48%;
+            }
+            .img12{
+                width: 47%;
+                height: 45%;
+            }
+        } 
+        .section-galeria5{
+            grid-area: area5;
+            text-align: center;
+            .img13{
+                width: 48%;
+                height: 45%;
+            }
+            .img14{
+                width: 48%;
+                height: 43%;
+            }
+            .img15{
+                width: 70%;     
+                height: 51%;
+            }
+        }
+        .section-galeria6{
+            grid-area: area6;
+            text-align: center;
+            .img16{
+                width: 80%;
+                height: 48%;
+            }
+            .img17{
+                width: 46%;
+                height: 45%;
+            }
+            .img18{
+                width: 45%;
+                height: 46%;
+            }
+        } 
+        .section-galeria7{
+            grid-area: area7;
+            text-align: center;
+            .img19{
+                width: 97%;
+                height: 48%;
+            }
+            .img20{
+                width: 97%;
+                height: 48%;
+            }
+        }
+        .section-galeria8{
+            grid-area: area8;
+            text-align: center;
+            .img21{
+                width: 97%;
+                height: 48%;
+            }
+            .img22{
+                width: 97%;
+                height: 48%;
+            }
+        }
+        .section-galeria9{
+            grid-area: area9;
+            text-align: center;
+            .img23{
+                width: 87%;
+                height: 46%;
+            }
+            .img24{
+                width: 45%;
+                height: 47%;
+            }
+            .img25{
+                width: 50%;
+                height: 46%;
+            }
+        }
+    
+    
+    
+    
+    
+    
+    }
+    
+}
+
+@media only screen and (min-width: 900px){
+    .body-galeria{
+        main{
+            height: 7500px;
+        }
+    }
+    
+    
+    .main-galeria{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 800px 800px 800px 800px 800px 800px 800px 800px 800px;
+        grid-template-areas:"area1"
+                            "area2"
+                            "area3"
+                            "area4"
+                            "area5"
+                            "area6"
+                            "area7"
+                            "area8"
+                            "area9";
+        align-content: space-between;
+    
+    
+        .section-galeria1{
+            grid-area: area1;
+            
+    
+            .img1{
+                margin-top: 20px;
+                margin-left: 10px;
+                height: 45%;
+                width: 45%;
+                
+            }
+            .img2{
+                margin-left: 20px;
+                height: 30%;
+                width: 45%;
+            }
+            .img3{
+                margin-top: 17px;
+                margin-left: 60px;
+                height: 45%;
+                width: 80%;
+                object-fit: contain;
+            }
+        }
+    
+        .section-galeria2{
+            grid-area: area2;
+            text-align: center;
+            
+    
+            .img4{
+                
+                width: 40%;
+                height: 50%;
+            }
+            .img5{
+                margin-top: 18px;
+                width: 50%;
+                height: 60%;
+    
+            }
+            .img6{
+                object-fit: contain;
+                margin-top: 10px;
+                width: 80%;
+                height: 30%;
+                
+            }
+    
+        }
+    
+        .section-galeria3{
+    
+            grid-area: area3;
+            text-align: center;
+    
+            .img7{
+                width:90%;
+                height: 40%;
+                object-fit: cover;
+            }
+            .img8{
+                margin-top: 15px;
+                margin-right: 10px;
+                width: 47%;
+                height: 50%;
+            }
+            .img9{
+                width: 40%;
+                height: 50%;
+            }
+    
+    
+        }
+        .section-galeria4{
+            grid-area: area4;
+            text-align: center;
+            .img10{
+                width: 95%;
+                height: 48%;
+            }
+            .img11{
+                width: 48%;
+                height: 48%;
+            }
+            .img12{
+                width: 47%;
+                height: 45%;
+            }
+        } 
+        .section-galeria5{
+            grid-area: area5;
+            text-align: center;
+            .img13{
+                width: 48%;
+                height: 45%;
+            }
+            .img14{
+                width: 48%;
+                height: 43%;
+            }
+            .img15{
+                width: 70%;     
+                height: 51%;
+            }
+        }
+        .section-galeria6{
+            grid-area: area6;
+            text-align: center;
+            .img16{
+                width: 80%;
+                height: 48%;
+            }
+            .img17{
+                width: 46%;
+                height: 45%;
+            }
+            .img18{
+                width: 45%;
+                height: 46%;
+            }
+        } 
+        .section-galeria7{
+            grid-area: area7;
+            text-align: center;
+            .img19{
+                width: 97%;
+                height: 48%;
+                object-fit: cover;
+            }
+            .img20{
+                width: 97%;
+                height: 48%;
+                object-fit: cover;
+            }
+        }
+        .section-galeria8{
+            grid-area: area8;
+            text-align: center;
+            .img21{
+                width: 97%;
+                height: 48%;
+            }
+            .img22{
+                width: 97%;
+                height: 48%;
+            }
+        }
+        .section-galeria9{
+            grid-area: area9;
+            text-align: center;
+            .img23{
+                width: 87%;
+                height: 46%;
+            }
+            .img24{
+                width: 45%;
+                height: 47%;
+            }
+            .img25{
+                width: 50%;
+                height: 46%;
+            }
+        }
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+}

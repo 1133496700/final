@@ -1,0 +1,138 @@
+.main-albumes{
+    display: grid;
+}
+
+
+
+
+@media only screen and (max-width: 899px){
+    .body-albumes{
+        main{
+            height: 8200px;
+        }
+
+    }
+
+    .main-albumes{
+        grid-template-columns:100%;
+        grid-template-rows: 1350px 670px 670px 670px 670px 670px 670px 670px 670px 670px 670px;
+        align-content: space-around;
+
+
+        .section-albumes-mob{
+
+            height: 670px;
+            text-align: center;
+
+            img{
+                width: 90%;
+                height: 200px;
+                margin-top: 30px;
+                object-fit: cover;
+            }
+            iframe{
+                margin-top: 30px;
+                width: 94%;
+            }
+        }
+
+
+
+        .section-info{
+
+            text-align: center;
+
+            h1{
+                
+                font-size: 32px;
+            }
+            h1,h2,h3{
+                color: $color-principal;
+                margin-top: 25px;
+                font-family: 'Amatic SC', cursive;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 28px;
+            }
+
+            img{
+
+                margin-top: 35px;
+                width: 92%;
+                height: 500px;
+            }
+            .img2pr{
+                margin-top: 15px;
+                width: 100%;
+                height: 160px;
+            }
+        }
+
+
+
+
+    }
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 900px){
+    .body-albumes{
+        main{
+            height: 11000px;
+        }
+    }
+    .main-albumes{
+        
+        .section-info{
+            text-align: center;
+            .img2pr{
+                width: 60%;
+                height: 160px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+                
+            }
+            h1,h2,h3{
+                color: $color-principal;
+                font-family: 'Amatic SC', cursive;
+                margin: 20px;
+                margin-bottom: 40px;
+                font-size: 44px;
+                background-color: black;
+                padding: 10px;
+                
+            }
+
+        }
+
+        .section-albumes-mob{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align:center;
+            
+            img{
+                width: 48%;
+                margin-bottom: 10px;
+            }
+            iframe{
+                margin-top: 10px;
+                width: 70%;
+                height: 350px;
+            }
+        }
+    }
+
+
+
+
+}

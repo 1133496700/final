@@ -1,0 +1,189 @@
+@media only screen and (max-width: 899px){
+
+    .main-contacto{
+    
+        text-align: center;
+    
+        .section-contactoimg{
+            img{
+                width: 48%;
+                height: 220px;
+            }
+        }
+    
+        .section-contacto{
+            text-align: center;
+            h1{
+                font-family: 'Syne Mono', monospace;
+                margin: 10px;
+                border-radius: 10px;
+                text-align: center;
+                width: 95%;
+                color: $color-principal;
+                font-size: 28px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                background-image: linear-gradient(to top, rgb(152, 159, 79), rgb(80, 24, 157));
+            }
+        }
+    
+        .section-form{
+            border-radius: 10px;
+            margin: 10px;
+            height: 800px;
+            text-align: center;
+            display: flex;
+            align-content: space-around;
+            background-image: linear-gradient(to top, rgb(152, 159, 79), rgb(80, 24, 157));
+            
+            label{
+                margin-top: 20px;
+                
+                input{
+                    text-align: center;
+                    margin-top: 20px;
+                    margin: 10px;
+                    height: 50px;
+                    width: 90%;
+                    font-size: 21px;
+                    
+    
+                }
+                span{
+                    
+                    color: $color-principal;
+                    font-size: 30px;
+                    font-family: 'Syne Mono', monospace;
+                }
+    
+            }
+    
+            .boton-form{
+                width: 200px;
+                height: 50px;
+                background-image: linear-gradient(to bottom, rgb(152, 159, 79), rgb(80, 24, 157));
+                border-radius: 10px;
+                color: rgb(17, 19, 17);
+                font-weight: 800;
+                font-size: 22px;
+                padding: 10px;
+                margin: 20px;
+                font-family: 'Syne Mono', monospace;
+            }
+            textarea{
+                width: 95%;
+                height: 220px;
+                margin-top: 20px;
+                margin: 10px;
+            }
+    
+        }
+    
+        .section-contactoimg2{
+            img{
+                margin-top: 20px;
+                width: 70%;
+                height: 340px;
+            }
+        }
+    
+    
+    
+    }
+
+
+}
+
+
+@media only screen and (min-width: 900px){
+    .main-contacto{
+    
+        text-align: center;
+    
+        .section-contactoimg{
+            img{
+                width: 60%;
+                height: 200px;
+                margin-top: 30px;
+            }
+        }
+    
+        .section-contacto{
+            text-align: center;
+            h1{
+                font-family: 'Syne Mono', monospace;
+                margin: 45px;
+                border-radius: 10px;
+                text-align: center;
+                width: 95%;
+                color: $color-principal;
+                font-size: 40px;
+                background-image: linear-gradient(to top, rgb(152, 159, 79), rgb(80, 24, 157));
+            }
+        }
+    
+        .section-form{
+            border-radius: 10px;
+            margin: 70px;
+            padding: 30px;
+            height: 800px;
+            text-align: center;
+            display: flex;
+            align-content: space-around;
+            background-image: linear-gradient(to top, rgb(152, 159, 79), rgb(80, 24, 157));
+            
+            label{
+                margin-top: 20px;
+                
+                input{
+                    text-align: center;
+                    margin-top: 28px;
+                    margin: 10px;
+                    height: 50px;
+                    width: 90%;
+                    font-size: 21px;
+                    
+    
+                }
+                span{
+                    
+                    color: $color-principal;
+                    font-size: 35px;
+                    font-family: 'Syne Mono', monospace;
+                }
+    
+            }
+    
+            .boton-form{
+                width: 220px;
+                height: 55px;
+                background-image: linear-gradient(to bottom, rgb(152, 159, 79), rgb(80, 24, 157));
+                border-radius: 10px;
+                color: rgb(17, 19, 17);
+                font-weight: 800;
+                font-size: 22px;
+                padding: 10px;
+                margin: 20px;
+                font-family: 'Syne Mono', monospace;
+            }
+            textarea{
+                width: 95%;
+                height: 220px;
+                margin-top: 20px;
+                margin: 10px;
+            }
+    
+        }
+    
+        .section-contactoimg2{
+            img{
+                
+                width: 42%;
+                height: 340px;
+            }
+        }
+    
+    
+    
+    }
+}

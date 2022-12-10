@@ -1,0 +1,519 @@
+
+
+.main-index{
+        
+        display: grid;
+
+
+        position: relative;
+
+        
+
+}
+
+// VISTA MOBILE //
+
+@media only screen and (max-width: 899px){
+    .main-index{
+
+        grid-template-columns: 100%;
+        grid-template-rows: 600px 450px 500px 450px 900px;
+        grid-template-areas:"area0"
+                            "area1"
+                            "area2"
+                            "area3"
+                            "area4";
+
+        height: 3100px;
+        align-content: space-around;
+        position: relative;
+
+    }
+    .pr-section{
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .ma-ind1{
+        grid-area: area0;
+
+        h1{
+            color: $color-principal;
+            font-size: 44px;
+            text-align: center;
+            font-family: 'Zen Dots', cursive;
+
+        }
+        img{
+            width: 40%;
+            height: 20%;
+        }
+
+    }
+    
+    .section-indio{
+
+        animation-name: principal;
+        animation-duration: 12s;
+        
+        grid-area: area0;
+        position: absolute;
+        right: 1px;
+        bottom: 0px;
+
+        img{
+            width: 320px;
+            height: 320px;
+        }
+    }
+    .ma-indcolado{
+        grid-area: area0;
+        position: absolute;
+        bottom: 0px;
+        left: 5px;
+        img{
+            width: 150px;
+            height: 110px;
+
+        }
+    }
+    .ma-ind2{
+        grid-area: area1;
+        img{
+            width: 100%;
+            height: 50%;
+        }
+    }
+    .ma-ind3{
+        grid-area: area2;
+        
+        position: relative;
+        iframe{
+            position: absolute;
+            bottom: 0px;
+        }
+
+        h1{
+            background-color: black;
+            margin: 4px;
+            border-radius: 3px;
+            font-family: 'Russo One', sans-serif;
+            text-align: center;
+            color: $color-principal;
+            font-size: 36px;
+        }
+
+    }
+    .ma-ind4{
+        grid-area: area3;
+        position: relative;
+        
+        h1{
+            background-color: black;
+            margin: 4px;
+            border-radius: 3px;
+            font-family: 'Russo One', sans-serif;
+            margin-top: 10px;
+            text-align: center;
+            color: $color-principal;
+            font-size: 37px;
+        }
+    }
+    
+    .ma-ind5{
+        text-align: center;
+
+        .limpioimg{
+            text-align: center;
+            margin-right: 4px;
+            width: 46%;
+            height: 60%;
+        }
+        .limpioimg2{
+            margin-top: 60px;
+            width: 80%;
+            height: 38%;
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+// VISTA ESCRITORIO //
+
+@media only screen and (min-width: 900px){
+
+    .body-index{
+        main{
+            height: 2600px;
+        }
+    }
+    .main-index{
+        grid-template-columns: 50% 47%;
+        grid-template-rows: 720px 500px 600px 500px 400px;
+        grid-template-areas:"areaind1 areaind2"
+                            "areaind3 areaind3"
+                            "areaind7 areaind7"
+                            "areaind5 areaind5"
+                            "areaind6 areaind6";
+        justify-content: space-between;
+        align-content: space-between;
+
+
+        
+        position: relative;
+
+        .section-indio{
+            grid-area: areaind2;
+            position: absolute;
+            right: 0px;
+            top: 35px;
+            z-index: 2;
+            img{
+                width: 100%;
+                height: 450px;
+            }
+            
+        }
+        .ma-indcolado{
+            grid-area: areaind2;
+            position: absolute;
+            bottom: 40px;
+            right: 0px;
+            
+            img{
+                width: 400px;
+                height: 200px;
+            }
+            img:hover{
+                width: 770px;
+            }
+        }
+        .pr-section{
+            z-index: 10;
+            position: fixed;
+            left: 20px;
+            bottom: 10px;
+            img{
+                
+                width: 100px;
+                height: 100px;
+            }
+            img:hover{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .ma-ind1{
+            
+            grid-area: areaind1;
+            position:absolute;
+            
+            width: 100%;
+            height: 100%;
+            h1{
+                padding: 10px;
+                font-family: 'Zen Dots', cursive;
+                margin: 30px;
+                
+                color: $color-principal;
+                font-size: 52px;
+                width: 100%;
+                background-color: black;
+                border-radius: 8px;
+                border: 2px solid gray;
+            }
+            h1:hover{
+                color: $color-principal-hover;
+                
+            }
+        }
+        .ma-ind2{
+            
+            grid-area: areaind3;
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            
+            img{
+                margin: 10px;
+                width: 43%;
+                height: 300px;
+            }
+            img:hover{
+                height: 500px;
+                width: 49%;
+            }
+            
+        }
+        .ma-ind3{
+            text-align: center;
+            grid-area: areaind7;
+            position: absolute;
+            margin: 10px;
+            
+            border-bottom: 4px solid rgb(2, 2, 2);
+
+            h1{
+                border: 2px solid gray;
+                font-family: 'Zen Dots', cursive;
+                margin: 15px;
+                padding: 14px;
+                color: $color-principal;
+                font-size: 44px;
+                background-color: black;
+                border-radius: 10px;
+                
+            }
+            h1:hover{
+                color: $color-index;
+                background-color: rgb(34, 32, 63);
+            }
+            
+        }
+        .ma-ind4{
+            
+            
+            grid-area: areaind5;
+            position: absolute;
+            top: 0px;
+            left: 45px;
+            
+
+            h1{
+                
+                font-family: 'Zen Dots', cursive;
+                margin: 15px;
+                padding: 14px;
+                color: $color-principal;
+                font-size: 35px;
+                background-color: black;
+                border-radius: 10px;
+                border: 2px solid gray;
+            }
+            h1:hover{
+                color: $color-index;
+                background-color: rgb(34, 32, 63);
+            }
+            
+        }
+        .ma-ind5{
+            grid-area: areaind6;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            img{
+                width: 30%;
+                height: 400px;
+            }
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    .body-index{
+        main{
+            height: 1520px;
+        }
+    }
+    .main-index{
+        grid-template-columns: 50% 47%;
+        grid-template-rows: 720px 600px 300px;
+        grid-template-areas:"areaind1 areaind2"
+                            "areaind3 areaind4"
+                            "areaind5 areaind5";
+        justify-content: space-between;
+        align-content: space-between;
+
+
+        
+        position: relative;
+
+        .section-indio{
+            grid-area: areaind2;
+            position: absolute;
+            right: 0px;
+            top: 35px;
+            z-index: 2;
+            img{
+                width: 100%;
+                height: 450px;
+            }
+        }
+        .ma-indcolado{
+            grid-area: areaind2;
+            position: absolute;
+            bottom: 40px;
+            right: 0px;
+            
+            img{
+                width: 400px;
+                height: 200px;
+            }
+            img:hover{
+                width: 540px;
+                
+            }
+        }
+        .pr-section{
+            z-index: 10;
+            position: fixed;
+            left: 20px;
+            bottom: 10px;
+            img{
+                
+                width: 100px;
+                height: 100px;
+            }
+            img:hover{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .ma-ind1{
+            text-align: center;
+            grid-area: areaind1;
+            position:absolute;
+            left: 60px;
+            width: 100%;
+            height: 100%;
+            h1{
+                padding: 10px;
+                font-family: 'Zen Dots', cursive;
+                margin: 30px;
+                
+                color: $color-principal;
+                font-size: 56px;
+                width: 100%;
+                background-color: black;
+                border-radius: 8px;
+                border: 2px solid gray;
+            }
+            h1:hover{
+                color: $color-principal-hover;
+                font-size: 58px;
+            }
+        }
+        .ma-ind2{
+            
+            grid-area: areaind1;
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            
+            img{
+                margin: 10px;
+                width: 40%;
+                height: 300px;
+            }
+            
+        }
+        .ma-ind3{
+            text-align: center;
+            grid-area: areaind3;
+            position: absolute;
+            margin: 10px;
+
+            h1{
+                border: 2px solid gray;
+                font-family: 'Zen Dots', cursive;
+                margin: 15px;
+                padding: 14px;
+                color: $color-principal;
+                font-size: 44px;
+                background-color: black;
+                border-radius: 10px;
+                
+            }
+            h1:hover{
+                color: $color-index;
+                background-color: rgb(34, 32, 63);
+            }
+            
+        }
+        .ma-ind4{
+            
+            text-align: center;
+            grid-area: areaind4;
+            position: absolute;
+            bottom: 0px;
+            left: 4px;
+            margin: 10px;
+
+            h1{
+                
+                font-family: 'Zen Dots', cursive;
+                margin: 15px;
+                padding: 14px;
+                color: $color-principal;
+                font-size: 35px;
+                background-color: black;
+                border-radius: 10px;
+                border: 2px solid gray;
+            }
+            h1:hover{
+                color: $color-index;
+                background-color: rgb(34, 32, 63);
+            }
+            
+        }
+        .ma-ind5{
+            grid-area: areaind5;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            img{
+                width: 30%;
+                height: 300px;
+            }
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+}
+
+
+@keyframes principal{
+
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}

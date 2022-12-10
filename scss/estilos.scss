@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// VARIABLES //
+
+
+@import "variables/variables";
+
+// DATOS PRINCIPALES //
+
+
+body{
+    display: grid;
+}
+
+nav{
+    display: flex;
+    height: 200px;
+    background-color: black;
+    ul{
+        li{
+            list-style-type: none;
+            a{
+                font-family: 'Cinzel Decorative', cursive;
+                text-decoration: none;
+                color: $color-principal;
+            }
+            a:hover{
+                color: $color-principal-hover;
+                border: 2px solid gray;
+                padding: 10px;
+                border-radius: 6px;
+                background-color: aqua;
+            }
+        }
+    }
+}
+
+
+main{
+    background-image: linear-gradient(to top, black,gray,gray,black);
+    height: 2000px;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+
+
+    .divfoot1{
+        h2,h3{
+            color: $color-principal;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+        }
+    }
+
+    
+
+}
+
+                    // VISTA MOBILE //
+
+@media only screen and (max-width: 899px){
+
+    nav{
+        height: 180px;
+
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+
+        ul{
+            position: absolute;
+            right: 15px;
+            font-size: 21px;
+
+            li{
+                text-align: center;
+                margin: 7px;
+            }
+        }
+    }
+    header{
+        height: 200px;
+    }
+    footer{
+        height: 180px;
+        position: relative;
+
+        .divfoot1{
+            text-align: center;
+            width: 100%;
+            
+            
+            h2,h3{
+                margin: 10px;
+            }
+            
+
+
+        }
+        .divfoot2{
+
+            width: 100%;
+
+            text-align: center;
+            position: absolute;
+            bottom: 8px;
+            
+            img{
+                margin-left: 20px;
+                
+            }
+
+
+        }
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+                    // VISTA ESCRITORIO //
+
+@media only screen and (min-width: 900px){
+    nav{
+        flex-direction: column;
+        height: 100%;
+        width: 20%;
+
+        position: fixed;
+        right: 0px;
+
+        text-align: center;
+
+        img{
+            
+            object-fit: cover;
+        }
+
+        ul{
+            font-size: 25px;
+
+            li{
+                text-align: center;
+                margin-top: 45px;
+            }
+        }
+
+
+    }
+
+    header{
+        height: 210px;
+        width: 80%;
+
+    }
+
+    main{
+        width: 80%;
+
+    }
+
+    footer{
+        width: 80%;
+        height: 130px;
+
+        text-align: center;
+
+        position: relative;
+
+        .divfoot1{
+            position: absolute;
+            left: 70px;
+            top: 30px;
+
+        }
+
+        .divfoot2{
+            position: absolute;
+            right: 20px;
+            bottom: 4px;
+
+            margin: 10px;
+
+            img{
+                margin-left: 10px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}
+
+// IMPORTACION DE COMPONENTES //
+
+@import "componentes/index";
+@import "componentes/patricio-rey";
+@import "componentes/indio-solari";
+@import "componentes/galeria";
+@import "componentes/contacto";
+
+
+
